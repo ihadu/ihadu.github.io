@@ -1,21 +1,57 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧑‍💻</text></svg>">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Resume Builder</title>
-    <meta name="keywords" content="在线简历生成工具,简历制作工具,生成简历,简历模板,PDF简历导出,resume builder,resume templates,CV maker,PDF resume export">
-    <meta name="description" content="使用在线简历生成工具快速创建并导出PDF简历 | Create and export professional PDF resumes instantly with our online resume builder">
-    <meta name="description" lang="zh-CN" content="使用在线简历生成工具，快速创建精美简历，支持导出PDF格式，轻松打造完美职业形象。">
-    <meta name="description" lang="en" content="Create professional resumes effortlessly with our online resume builder.">
-    <script type="module" crossorigin src="/resume/assets/index-hxkxNhOX.js"></script>
-    <link rel="modulepreload" crossorigin href="/resume/assets/vendor-BXsth6EJ.js">
-    <link rel="modulepreload" crossorigin href="/resume/assets/vendor-react-Du25NSsk.js">
-    <link rel="modulepreload" crossorigin href="/resume/assets/vendor-tiptap-Bl9Cu9ue.js">
-    <link rel="stylesheet" crossorigin href="/resume/assets/index-CLTH_Hjl.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<head>
+  <meta charset="UTF-8"/>
+  <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧑‍💻</text></svg>">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resume Builder</title>
+  <meta name="keywords"
+        content="在线简历生成工具,简历制作工具,生成简历,简历模板,PDF简历导出,resume builder,resume templates,CV maker,PDF resume export">
+  <meta name="description"
+        content="使用在线简历生成工具快速创建并导出PDF简历 | Create and export professional PDF resumes instantly with our online resume builder">
+  <meta name="description" lang="zh-CN"
+        content="使用在线简历生成工具，快速创建精美简历，支持导出PDF格式，轻松打造完美职业形象。">
+  <meta name="description" lang="en" content="Create professional resumes effortlessly with our online resume builder.">
+  <script type="module" crossorigin src="/resume/assets/index-hxkxNhOX.js"></script>
+  <link rel="modulepreload" crossorigin href="/resume/assets/vendor-BXsth6EJ.js">
+  <link rel="modulepreload" crossorigin href="/resume/assets/vendor-react-Du25NSsk.js">
+  <link rel="modulepreload" crossorigin href="/resume/assets/vendor-tiptap-Bl9Cu9ue.js">
+  <link rel="stylesheet" crossorigin href="/resume/assets/index-CLTH_Hjl.css">
+</head>
+<body>
+<div id="root"></div>
+<script src="https://registry.npmmirror.com/page-agent/1.5.11/files/dist/iife/page-agent.demo.js"></script>
+<script>
+(function() {
+  function initPageAgent() {
+    // 检查 page-agent 是否加载
+    if (typeof PageAgent === 'undefined') {
+      setTimeout(initPageAgent, 500);
+      return;
+    }
+
+    // 创建实例（中文界面）并暴露到全局
+    window.pageAgent = new PageAgent({
+      language: 'zh-CN',
+    });
+
+    console.log('[page-agent] 已在简历页面成功初始化');
+    console.log('[page-agent] 调用方法：');
+    console.log('  - window.pageAgent.panel.show()  // 显示面板');
+    console.log('  - window.pageAgent.panel.hide()  // 隐藏面板');
+    console.log('  - window.pageAgent.panel.expand()  // 展开历史');
+    console.log('  - window.pageAgent.panel.collapse()  // 收起历史');
+    console.log('  - window.pageAgent.execute("你的任务")  // 执行任务');
+  }
+
+  // 页面加载完成后初始化
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initPageAgent);
+  } else {
+    initPageAgent();
+  }
+})();
+</script>
+</body>
 </html>
