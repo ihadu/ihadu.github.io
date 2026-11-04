@@ -21,37 +21,5 @@
 </head>
 <body>
 <div id="root"></div>
-<script src="https://registry.npmmirror.com/page-agent/1.5.11/files/dist/iife/page-agent.demo.js"></script>
-<script>
-(function() {
-  function initPageAgent() {
-    // 检查 page-agent 是否加载
-    if (typeof PageAgent === 'undefined') {
-      setTimeout(initPageAgent, 500);
-      return;
-    }
-
-    // 创建实例（中文界面）并暴露到全局
-    window.pageAgent = new PageAgent({
-      language: 'zh-CN',
-    });
-
-    console.log('[page-agent] 已在简历页面成功初始化');
-    console.log('[page-agent] 调用方法：');
-    console.log('  - window.pageAgent.panel.show()  // 显示面板');
-    console.log('  - window.pageAgent.panel.hide()  // 隐藏面板');
-    console.log('  - window.pageAgent.panel.expand()  // 展开历史');
-    console.log('  - window.pageAgent.panel.collapse()  // 收起历史');
-    console.log('  - window.pageAgent.execute("你的任务")  // 执行任务');
-  }
-
-  // 页面加载完成后初始化
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initPageAgent);
-  } else {
-    initPageAgent();
-  }
-})();
-</script>
 </body>
 </html>

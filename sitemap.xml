@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://nivbi.com/procurement-form/index.html</loc>
+    
+    <lastmod>2026-11-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://nivbi.com/posts/57771865.html</loc>
     
     <lastmod>2026-11-04</lastmod>
@@ -815,15 +824,6 @@
     <loc>https://nivbi.com/posts/249c59e6.html</loc>
     
     <lastmod>2026-11-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://nivbi.com/procurement-form/index.html</loc>
-    
-    <lastmod>2026-03-21</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
